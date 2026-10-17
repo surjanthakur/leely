@@ -29,7 +29,7 @@ async def web_search_tool(query: str) -> dict:
         max_results=10,
         timeout=20,
         language="en",
-        search_depth="advanced",
+        search_depth="",
         include_domains_mode="prefer",
         include_usage=False,
         include_answer=False,
