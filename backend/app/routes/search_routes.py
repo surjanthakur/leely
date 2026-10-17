@@ -23,4 +23,4 @@ async def search_resources(
     requests: SearchRequest,
     request: Request,  # noqa: ARG001
 ) -> dict:
-    return await search_resources_service(input_query=requests.user_query)
+    return await search_resources_service(requests)

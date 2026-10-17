@@ -2,14 +2,14 @@ from fastapi import HTTPException, status
 
 from ..core.logginig import get_logger
 from ..core.tools_provider import web_search_tool
+from ..schema.search_query_model import SearchRequest
 
 logger = get_logger(__name__)
 
 
-async def search_resources_service(input_query: str):
-    query = (input_query or "").strip()
+async def search_resources_service(search_req: SearchRequest):
 
-    if not query:
+    if not search_req:
         raise ValueError("Search query cannot be empty.")
 
     try:
