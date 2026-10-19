@@ -1,7 +1,7 @@
 from tavily import AsyncTavilyClient
 
-from .settings import settings
 from ..schema.search_query_model import SearchRequest
+from .settings import settings
 
 tavily_client = AsyncTavilyClient(api_key=settings.TRAVILY_API_KEY)
 
