@@ -35,7 +35,6 @@ async def web_search_tool(req: SearchRequest) -> dict:
         include_usage=False,
         include_answer=False,
         include_favicon=False,
-        safe_search=True,
         include_images=False,
         include_raw_content=False,
         include_generated_markdown=False,
