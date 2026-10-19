@@ -4,7 +4,6 @@ import DashboardRedirectButton from './DashboardRedirectButton.jsx';
 import Footer from './Footer.jsx';
 import { Navbar } from './home/Navbar.jsx';
 import { Hero } from './home/Hero.jsx';
-import { Showcase } from './home/Showcase.jsx';
 import { Features } from './home/Features.jsx';
 import { FinalCTA } from './home/FinalCTA.jsx';
 
@@ -15,7 +14,6 @@ export {
   Footer,
   Navbar,
   Hero,
-  Showcase,
   Features,
   FinalCTA,
 };

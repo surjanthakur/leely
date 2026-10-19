@@ -4,10 +4,7 @@ export const CARD = 'relative rounded-2xl border-2 border-black';
 export const SHADOW = 'shadow-[5px_6px_0_#000]';
 export const MOBILE_CARD = 'mx-auto w-full max-w-[360px] sm:max-w-none';
 
-export const NAV = [
-  { label: 'Showcase', href: '#showcase' },
-  { label: 'Features', href: '#features' },
-];
+export const NAV = [{ label: 'Features', href: '#features' }];
 
 export const TOPICS = [
   'General knowledge resources',
