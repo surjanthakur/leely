@@ -35,9 +35,6 @@ export function Navbar() {
           <img src={LeelyLogo} alt="" className="h-18 w-18 object-contain" />
           <span className="font-serif text-xl text-black font-bold leading-none tracking-tight">
             Leely.fun
-            <span className="ml-1 align-super font-mono text-[9px] font-bold tracking-widest text-black/70">
-              beta
-            </span>
           </span>
         </a>
 
