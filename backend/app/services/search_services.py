@@ -15,7 +15,7 @@ async def search_resources_service(search_req: SearchRequest):
     try:
         logger.info(f"👍 executing web_search_tool for query: {search_req.user_query}")
 
-        response = await web_search_tool()
+        response = await web_search_tool(search_req)
 
         search_results = (
             response.get("results", []) if isinstance(response, dict) else []
