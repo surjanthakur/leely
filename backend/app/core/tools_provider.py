@@ -1,6 +1,7 @@
 from tavily import AsyncTavilyClient
 
 from .settings import settings
+from ..schema.search_query_model import SearchRequest
 
 tavily_client = AsyncTavilyClient(api_key=settings.TRAVILY_API_KEY)
 
@@ -23,13 +24,13 @@ EXCLUDED_DOMAINS = [
 ]
 
 
-async def web_search_tool(query: str) -> dict:
+async def web_search_tool(req: SearchRequest) -> dict:
     response = await tavily_client.search(
-        query=query,
-        max_results=10,
+        query=req.user_query,
+        max_results=req.max_results or 5,
         timeout=20,
         language="en",
-        search_depth="",
+        search_depth=req.search_depth,
         include_domains_mode="prefer",
         include_usage=False,
         include_answer=False,

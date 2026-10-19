@@ -13,9 +13,9 @@ async def search_resources_service(search_req: SearchRequest):
         raise ValueError("Search query cannot be empty.")
 
     try:
-        logger.info(f"👍 executing web_search_tool for query: {query}")
+        logger.info(f"👍 executing web_search_tool for query: {search_req.user_query}")
 
-        response = await web_search_tool(query)
+        response = await web_search_tool()
 
         search_results = (
             response.get("results", []) if isinstance(response, dict) else []
