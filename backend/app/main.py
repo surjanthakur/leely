@@ -40,10 +40,10 @@ app.add_middleware(
 )
 
 
-app.add_middleware(
-    TrustedHostMiddleware,
-    allowed_hosts=[settings.FRONTEND_HOST, settings.BACKEND_HOST],
-)
+# * app.add_middleware(
+#     TrustedHostMiddleware,
+#     allowed_hosts=[settings.FRONTEND_HOST, settings.BACKEND_HOST],
+# )
 
 
 # Logging time taken for each api request
