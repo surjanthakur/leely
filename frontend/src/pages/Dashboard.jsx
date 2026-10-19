@@ -177,11 +177,7 @@ export default function Dashboard() {
 
     try {
       // 👇 payload matches the backend `SearchRequest` model
-      const response = await CallAgent({
-        user_query: userQuery,
-        max_results: maxResults,
-        search_depth: searchDepth,
-      });
+      const response = await CallAgent(userQuery, maxResults, searchDepth);
 
       const foundResources = response?.found_resources || [];
 
