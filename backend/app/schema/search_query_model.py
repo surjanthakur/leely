@@ -11,7 +11,7 @@ class SearchRequest(BaseModel):
         max_length=100,
         examples=["hey i want to read databse design articles."],
     )
-    max_results: int = Field(default=5, title="results of resources")
+    max_results: int = Field(default=5, title="results of resources", gt=0, le=10)
     search_depth: Literal["advanced", "basic", "fast", "ultra-fast"] = Field(
         default="fast", title="dept of search result"
     )

@@ -8,9 +8,12 @@ logger = get_logger(__name__)
 
 
 async def search_resources_service(search_req: SearchRequest):
+    normalized_query = search_req.user_query.strip()
 
-    if not search_req.user_query:
+    if not normalized_query:
         raise ValueError("Search query cannot be empty.")
+
+    search_req.user_query = normalized_query
 
     try:
         logger.info(f"👍 executing web_search_tool for query: {search_req.user_query}")
