@@ -9,7 +9,7 @@ logger = get_logger(__name__)
 
 async def search_resources_service(search_req: SearchRequest):
 
-    if not search_req:
+    if not search_req.user_query:
         raise ValueError("Search query cannot be empty.")
 
     try:
