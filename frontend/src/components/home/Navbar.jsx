@@ -34,7 +34,7 @@ export function Navbar() {
         <a href="#home" className="group flex items-center gap-2.5">
           <img src={LeelyLogo} alt="" className="h-18 w-18 object-contain" />
           <span className="font-serif text-xl text-black font-bold leading-none tracking-tight">
-            Leely.fun
+            my personal Leely
           </span>
         </a>
 
