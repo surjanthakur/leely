@@ -359,7 +359,7 @@ export default function Dashboard() {
                   {/* Results count — 3 buttons */}
                   <div className="flex items-center gap-2">
                     <span className="shrink-0 text-[10px] font-black uppercase tracking-widest text-neutral-400 dark:text-neutral-500">
-                      Results
+                      Results:
                     </span>
                     <div
                       role="group"
@@ -381,7 +381,7 @@ export default function Dashboard() {
                   {/* Search depth */}
                   <div className="flex items-center gap-2">
                     <span className="shrink-0 text-[10px] font-black uppercase tracking-widest text-neutral-400 dark:text-neutral-500">
-                      Depth
+                      Depth:
                     </span>
                     <div
                       role="group"
