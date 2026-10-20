@@ -1,9 +1,7 @@
 import { ArrowToDownLeft, Home6 } from 'reicon-react';
 import { useRef, useState, useEffect } from 'react';
 import { SettingsPopupWindow } from '../components/export.js';
-import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
-import { CallAgent } from '../api/agent.api.js';
 import { AgentLoader } from '../components/export.js';
 import LeelyLogo from '../assets/read_with_leely_logo.png';
 import { Link } from 'react-router-dom';
@@ -28,10 +26,7 @@ export default function Dashboard() {
     }
   });
 
-  const textareaRef = useRef(null);
   const chatWindowRef = useRef(null);
-
-  const { reset } = useForm();
 
   // Persist chats
   useEffect(() => {

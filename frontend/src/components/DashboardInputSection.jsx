@@ -1,6 +1,8 @@
 import { Settings2, Trash2, Magicpen } from 'reicon-react';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { useForm } from 'react-hook-form';
+import { CallAgent } from '../api/agent.api';
+import { toast } from 'react-toastify';
 
 /* ------------------------------------------------------------------ */
 /*  Search configuration (mirrors the backend `SearchRequest` model)   */
@@ -65,12 +67,19 @@ function OptionButton({ active, onClick, label, description }) {
   );
 }
 
-export default function DashboardInputSection({ handleSettings }) {
+export default function DashboardInputSection({
+  handleSettings,
+  setChats,
+  setIsAgentLoading,
+  chats,
+  isAgentLoading,
+}) {
   // 🔽 search options — persisted so the user's choice survives reloads
   const [maxResults, setMaxResults] = useState(getStoredMaxResults);
   const [searchDepth, setSearchDepth] = useState(getStoredSearchDepth);
 
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
+  const textareaRef = useRef(null);
 
   // Persist search preferences
   useEffect(() => {
