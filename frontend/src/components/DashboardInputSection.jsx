@@ -78,8 +78,8 @@ export default function DashboardInputSection({
   const [maxResults, setMaxResults] = useState(getStoredMaxResults);
   const [searchDepth, setSearchDepth] = useState(getStoredSearchDepth);
 
-  const { register, handleSubmit, reset } = useForm();
   const textareaRef = useRef(null);
+  const { register, handleSubmit, reset } = useForm();
 
   // Persist search preferences
   useEffect(() => {

@@ -6,11 +6,13 @@ import { Navbar } from './home/Navbar.jsx';
 import { Hero } from './home/Hero.jsx';
 import { Features } from './home/Features.jsx';
 import { FinalCTA } from './home/FinalCTA.jsx';
+import DashboardInputSection from './DashboardInputSection.jsx';
 
 export {
   SettingsPopupWindow,
   AgentLoader,
   DashboardRedirectButton,
+  DashboardInputSection,
   Footer,
   Navbar,
   Hero,

@@ -1,6 +1,6 @@
 import { ArrowToDownLeft, Home6 } from 'reicon-react';
 import { useRef, useState, useEffect } from 'react';
-import { SettingsPopupWindow } from '../components/export.js';
+import { SettingsPopupWindow, DashboardInputSection } from '../components/export.js';
 import { toast } from 'react-toastify';
 import { AgentLoader } from '../components/export.js';
 import LeelyLogo from '../assets/read_with_leely_logo.png';
@@ -184,6 +184,13 @@ export default function Dashboard() {
           </main>
 
           {/* Input Area - Floating Brutalist Box */}
+          <DashboardInputSection
+            setChats={setChats}
+            chats={chats}
+            isAgentLoading={isAgentLoading}
+            setIsAgentLoading={setIsAgentLoading}
+            handleSettings={handleSettings}
+          />
         </div>
       </div>
 
