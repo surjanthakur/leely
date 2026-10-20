@@ -83,4 +83,4 @@ For local work:
 
 This project is simple and focused on helping users read better and faster.
 
-## build with ❤️ by surjan.
+## build with ❤️ by surjan
