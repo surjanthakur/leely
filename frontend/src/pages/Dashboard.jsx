@@ -18,7 +18,7 @@ const MAX_RESULTS_OPTIONS = [3, 5, 10];
 const SEARCH_DEPTH_OPTIONS = [
   { value: 'basic', label: 'Basic', hint: 'Balanced crawl for general topics' },
   { value: 'fast', label: 'Fast', hint: 'Quick lookup with low latency (default)' },
-  { value: 'ultra-fast', label: 'Ultra', hint: 'Fastest possible, minimal crawl' },
+  { value: 'ultra-fast', label: 'Ultra-fast', hint: 'Fastest possible, minimal crawl' },
   { value: 'advanced', label: 'Advanced', hint: 'Deep crawl, best quality, slowest' },
 ];
 
