@@ -6,7 +6,7 @@ import { Navbar } from '../components/export.js';
 export default function MainLayout() {
   return (
     <>
-      <div className="min-h-screen bg-[#f7f6f0]">
+      <div className="min-h-screen bg-[#f7f5e9]">
         <Navbar />
         <main>
           <ToastContainer
