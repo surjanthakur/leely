@@ -104,7 +104,7 @@ export function Navbar() {
                   key={n.href}
                   href={n.href}
                   onClick={() => setOpen(false)}
-                  className="rounded-xl border-2 border-black bg-white px-4 py-3 font-mono text-sm font-bold uppercase tracking-wider shadow-[3px_3px_0_#000] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none"
+                  className="rounded-xl border-2 border-black text-black/70 bg-white px-4 py-3 font-mono text-sm font-bold uppercase tracking-wider shadow-[3px_3px_0_#000] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none"
                 >
                   {n.label}
                 </a>
@@ -112,7 +112,7 @@ export function Navbar() {
               <Link
                 to="/why"
                 onClick={() => setOpen(false)}
-                className="rounded-xl border-2 border-black bg-white px-4 py-3 font-mono text-sm font-bold uppercase tracking-wider shadow-[3px_3px_0_#000] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none"
+                className="rounded-xl border-2 border-black bg-white px-4 py-3 font-mono text-sm text-black/70 font-bold uppercase tracking-wider shadow-[3px_3px_0_#000] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none"
               >
                 why i build this?
               </Link>
