@@ -10,7 +10,7 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b-2 border-black bg-[#f7f6f0]/85 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-black/30 bg-[#f7f6f0]/85 backdrop-blur-md">
       <div className="border-b-2 border-black bg-black py-1.5 text-white">
         <Marquee
           speed={34}
