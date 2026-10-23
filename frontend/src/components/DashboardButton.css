@@ -1,7 +1,7 @@
 /* From Uiverse.io by MuhammadHasann */
 .button {
   --black-700: hsla(0 0% 12% / 1);
-  --border_radius: 9999px;
+  --border_radius: 16px;
   --transtion: 0.3s ease-in-out;
   --offset: 2px;
 
