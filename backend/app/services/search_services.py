@@ -32,13 +32,11 @@ async def search_resources_service(search_req: SearchRequest):
             title = result.get("title") or "Untitled resource"
             url = result.get("url") or ""
             score = result.get("score", 0)
-            content = result.get("content") or ""
             resources.append(
                 {
                     "title": title,
                     "url": url,
                     "score": score,
-                    "content": content,
                 }
             )
 
