@@ -153,15 +153,6 @@ export default function Dashboard() {
                             >
                               {resource.url}
                             </a>
-
-                            <div className="mt-4 rounded-xl border-2 border-black bg-white p-3 shadow-[2px_2px_0px_0px_#000] transition-colors duration-300 dark:border-neutral-600 dark:bg-neutral-900">
-                              <p className="wrap-break-word text-sm font-medium leading-6 text-neutral-800 dark:text-neutral-200">
-                                <span className="mb-1 block font-black text-black dark:text-white">
-                                  About this resource:
-                                </span>{' '}
-                                {resource.content?.split(/\s+/).slice(0, 50).join(' ')}...
-                              </p>
-                            </div>
                           </article>
                         ))}
                       </div>
