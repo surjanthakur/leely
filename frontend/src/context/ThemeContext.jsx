@@ -9,7 +9,7 @@ function getInitialTheme() {
   try {
     return window.localStorage.getItem(THEME_STORAGE_KEY) === 'dark' ? 'dark' : 'light';
   } catch (error) {
-    console.error('Unable to read the saved theme preference.', error);
+    console.error('Unable to read the save theme preference.', error);
     return 'light';
   }
 }
